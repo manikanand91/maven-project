@@ -3,6 +3,9 @@ pipeline {
    tools {
     maven 'localMaven'
     }
+    tools {
+     jdk 'localJDK'
+     }
    stages{
        stage('Init') { // for display purposes
           // Get some code from a GitHub repository
