@@ -2,10 +2,9 @@ pipeline {
    agent any
    tools {
     maven 'localMaven'
+    jdk 'localJDK'
     }
-    tools {
-     jdk 'localJDK'
-     }
+
    stages{
        stage('Init') { // for display purposes
           // Get some code from a GitHub repository
