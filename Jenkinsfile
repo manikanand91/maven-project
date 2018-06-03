@@ -5,6 +5,9 @@ pipeline {
             steps {
                 bat 'mvn clean package'
             }
+            tools {
+            maven 'localMaven'
+            }
             post {
                 success {
                     echo 'Now Archiving...'
