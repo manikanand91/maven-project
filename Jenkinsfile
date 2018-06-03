@@ -30,14 +30,14 @@ stages{
             parallel{
                 stage ('Deploy to Staging'){
                     steps {
-                        bat "cd /d C:\Program Files (x86)\WinSCP"
+                        bat "cd C:/Program Files (x86)/WinSCP"
                         bat "winscp -i C:/Users/manik/myTomcatServerKey.pem **/target/*.war ec2-user@${params.tomcat_dev}:/var/lib/tomcat7/webapps"
                     }
                 }
 
                 stage ("Deploy to Production"){
                     steps {
-                        bat "cd /d C:\Program Files (x86)\WinSCP"
+                        bat "cd C:/Program Files (x86)/WinSCP"
                         bat "winscp -i C:/Users/manik/myTomcatServerKey.pem **/target/*.war ec2-user@${params.tomcat_prod}:/var/lib/tomcat7/webapps"
                     }
                 }
