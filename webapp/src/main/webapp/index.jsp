@@ -1,1 +1,1 @@
-Hello, World! 2nd version. ABCD.kuasgdksauhdfosudh 
+Hello, World! 2nd version. ABCD.
